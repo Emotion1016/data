@@ -1,0 +1,9 @@
+storeCode,regUsername,regPwd,regPwdAgain,exp
+ajigou,,,,请输入用户名
+ajigou,wyx,,,请输入新的密码
+ajigou,,123123,,请输入用户名
+ajigou,,,123123,请输入用户名
+ajigou,wyx,123123,,请再次确认密码
+ajigou,wyx,,123123,请输入新的密码
+ajigou,,123123,123123,请输入用户名
+ajigou,wyx,12312,12312,密码是6-20个字符

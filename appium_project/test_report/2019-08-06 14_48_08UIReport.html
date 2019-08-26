@@ -1,0 +1,47 @@
+
+Running tests... 
+----------------------------------------------------------------------
+ test_Login_001_0_ (test_login.LoginTest) ... OK (8.493070)s
+ test_Login_001_1_zq (test_login.LoginTest) ... ERROR (12.874646)s
+ test_Login_001_2_www (test_login.LoginTest) ... OK (3.097319)s
+ test_Login_001_3_zq (test_login.LoginTest) ... OK (3.150935)s
+ test_Login_001_4_zq (test_login.LoginTest) ... ERROR (12.873674)s
+
+======================================================================
+ERROR [12.874646s]: test_login.LoginTest.test_Login_001_1_zq
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Anaconda3\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\appium_project\test_case\test_login.py", line 17, in test_Login_001
+    res = self.get_toast_text(exp)
+  File "D:\appium_project\base\base_page.py", line 48, in get_toast_text
+    toast = WebDriverWait(self.driver, timeout, poll_frequency).until(presence_of_element_located(toast_element))
+  File "C:\Anaconda3\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+======================================================================
+ERROR [12.873674s]: test_login.LoginTest.test_Login_001_4_zq
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Anaconda3\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\appium_project\test_case\test_login.py", line 17, in test_Login_001
+    res = self.get_toast_text(exp)
+  File "D:\appium_project\base\base_page.py", line 48, in get_toast_text
+    toast = WebDriverWait(self.driver, timeout, poll_frequency).until(presence_of_element_located(toast_element))
+  File "C:\Anaconda3\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0:00:53
+
+FAILED
+ (Errors=2)
+
+Generating HTML reports... 
+reports\UIReport_test_login.LoginTest_2019-08-06_14-48-08.html
